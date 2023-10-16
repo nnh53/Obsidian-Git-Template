@@ -1,0 +1,23 @@
+{
+  "obsidian-prism-theme@@link-internal-color-lt": "var(--link-internal-custom-color-lt)",
+  "obsidian-prism-theme@@link-internal-custom-color-lt": "#FF00D3",
+  "obsidian-prism-theme@@link-external-color-lt": "var(--link-external-custom-color-lt)",
+  "obsidian-prism-theme@@link-external-custom-color-lt": "#CD00FF",
+  "sanctum@@light-mode-contrast-mode": "sanctum-default-light",
+  "sanctum@@color-accent-rgb-l": "165, 119, 218",
+  "encore-settings@@theme-colours": "encore-theme-atom",
+  "encore-settings@@shaded-title": false,
+  "encore-settings@@encore-coloured-tooltip": false,
+  "minimal-style@@bold-color@@dark": "#FFE900",
+  "minimal-style@@bold-color@@light": "#FF0000",
+  "minimal-style@@h4-variant": "normal",
+  "minimal-style@@h5-variant": "normal",
+  "minimal-style@@h6-variant": "normal",
+  "obsidian-default-theme-modified@@file-header-visibility": "minimal-tab-title-hover",
+  "obsidian-default-theme-modified@@file-header-justify": "center",
+  "obsidian-default-theme-modified@@callout-blend-mode": "var(--highlight-mix-blend-mode)",
+  "obsidian-default-theme-modified@@callouts-style": "callouts-outlined",
+  "minimal-style@@callouts-style": "callouts-outlined",
+  "minimal-advanced@@styled-scrollbars": false,
+  "minimal-advanced@@cursor": "default"
+}

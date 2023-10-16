@@ -1,0 +1,34 @@
+{
+  "items": [
+    {
+      "type": "file",
+      "title": "todo",
+      "path": "todo.md"
+    },
+    {
+      "type": "file",
+      "title": "FPT - My University Life",
+      "path": "MAIN/FPT - My University Life.md"
+    },
+    {
+      "type": "file",
+      "title": "NGUYEN NAM HOANG",
+      "path": "MAIN/NGUYEN NAM HOANG.md"
+    },
+    {
+      "type": "file",
+      "title": "MASTER REVIEW",
+      "path": "MAIN/MASTER REVIEW.md"
+    },
+    {
+      "type": "file",
+      "title": "Source of knowlegde",
+      "path": "UNSORTED/Where to Learn - Source of Knowlegde.md"
+    },
+    {
+      "type": "file",
+      "title": "How to learn",
+      "path": "UNSORTED/How to learn.md"
+    }
+  ]
+}
