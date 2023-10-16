@@ -128,6 +128,9 @@ Snippets and plugins can define custom callouts, too, or overwrite the default o
 > [!danger] 
 >  test
 
+> [!warning] 
+>  test
+
 > [!glyph] 
 >  test
 
