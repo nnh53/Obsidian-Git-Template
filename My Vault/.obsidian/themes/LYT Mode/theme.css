@@ -2233,11 +2233,6 @@ span.frontmatter-section-label {
   /* display: none; mình sửa do bị hở sườn */
 }
 
-/* my fix drop down */
-.search-results-info .dropdown {
-  text-align-last: left;
-}
-
 /*────────────────────────────────────
         Backlinks in Document
 ────────────────────────────────────*/
@@ -3327,6 +3322,16 @@ select,
   border: 1px solid var(--color-yellow-500);
   box-shadow: none;
   transition: var(--anim-duration-superfast) var(--anim-motion-smooth);
+}
+
+/* my fix drop down */
+.search-results-info .dropdown {
+  text-align-last: left;
+}
+
+.setting-item-control .dropdown {
+  padding: 2px 20px 2px 4px;
+  text-align-last: left !important;
 }
 
 /*────────────────────────────────────
