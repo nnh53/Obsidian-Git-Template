@@ -5,7 +5,6 @@
   "url-into-selection",
   "table-editor-obsidian",
   "oz-clear-unused-images",
-  "obsidian-quiet-outline",
   "mousewheel-image-zoom",
   "omnisearch",
   "obsidian-git",
@@ -13,5 +12,6 @@
   "obsidian-pandoc",
   "obsidian-link-converter",
   "consistent-attachments-and-links",
-  "cm-editor-syntax-highlight-obsidian"
+  "cm-editor-syntax-highlight-obsidian",
+  "obsidian-quiet-outline"
 ]
