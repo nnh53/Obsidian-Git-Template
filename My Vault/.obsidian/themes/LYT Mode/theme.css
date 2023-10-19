@@ -1149,8 +1149,8 @@ body.theme-dark {
 .tree-item-self.is-clickable:hover {
   color: var(--color-cyan-500);
   background: var(--color-gray-90);
+  /* background: red !important; */
   border: 1px solid var(--color-cyan-500) !important;
-  /* background-color: red; */
 }
 
 .tree-item-self.is-clickable:hover .tree-item-icon {
@@ -1159,7 +1159,6 @@ body.theme-dark {
 
 .tree-item-self.is-clickable:active {
   color: var(--color-gray-50);
-  /* background-color: red; */
   background: var(--color-blacker);
   border: 1px solid var(--color-gray-50);
 }
@@ -3977,24 +3976,16 @@ body.hider-frameless .workspace-split.mod-left-split > .workspace-tabs {
 }
 
 /*────────────────────────────────────
-                Quiet-Outline my fix
+          Side Panel Backround Color my fix
 ────────────────────────────────────*/
-.n-tree-node-wrapper .located {
-  /* background-color: red !important;
-    padding-left: 50px !important; */
-}
-
-.workspace-tab-container .workspace-leaf-content {
-  background-color: red;
-}
-
-.workspace-leaf {
-  background-color: red;
-}
 
 .workspace-leaf-content {
   background-color: var(--color-gray-90) !important;
 }
+
+/*────────────────────────────────────
+                Quiet-Outline my fix
+────────────────────────────────────*/
 
 .workspace-leaf-content .view-content {
   padding: 0px;
@@ -4045,6 +4036,16 @@ body.hider-frameless .workspace-split.mod-left-split > .workspace-tabs {
   padding-left: 5px !important;
   cursor: text;
 }
+
+
+/* .n-tree-node-wrapper .located {
+  background-color: red !important;
+  padding-left: 50px !important;
+}
+
+.workspace-tab-container .workspace-leaf-content {
+  background-color: red;
+} */
 
 /*────────────────────────────────────
                 Dataview

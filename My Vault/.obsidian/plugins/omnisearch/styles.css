@@ -25,7 +25,7 @@
 }
 
 .omnisearch-result__title > span {
-  display: flex;
+  
 }
 
 .omnisearch-result__folder-path {
@@ -37,9 +37,9 @@
 }
 
 .omnisearch-result__extension {
-  font-size: 0.7rem;
-  color: var(--text-muted);
-}
+    font-size: 0.7rem;
+    color: var(--text-muted);
+  }
 
 .omnisearch-result__counter {
   font-size: 0.7rem;
@@ -58,34 +58,22 @@
 
   color: var(--text-muted);
   margin-left: 0.5em;
-  line-height: 1.4rem;
 }
 
 .omnisearch-result__image-container {
   flex-basis: 20%;
-  text-align: right;
+  text-align: right
 }
 
 .omnisearch-highlight {
 }
 
 .omnisearch-default-highlight {
-  --color-cyan-530: hsl(191, 54%, 64%);
-  --color-highlight-text: var(--color-cyan-530);
-  --color-highlight-bg: rgba(255, 252, 59, 0.08);
-  --color-highlight-border: rgba(255, 252, 59, 0.4);
-  /* biến */
-
-  color: var(--color-highlight-text);
-  background: var(--color-highlight-bg);
-  border-bottom: 2px solid var(--color-highlight-border);
-  border-radius: 2px;
-
-  /* text-decoration: underline;
+  text-decoration: underline;
   text-decoration-color: var(--text-highlight-bg);
   text-decoration-thickness: 3px;
   text-underline-offset: -1px;
-  text-decoration-skip-ink: none; */
+  text-decoration-skip-ink: none;
 }
 
 .omnisearch-input-container {

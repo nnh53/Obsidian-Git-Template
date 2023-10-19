@@ -1,4 +1,8 @@
 /* src/stalin.css */
+
+/* my fix */
+
+
 .quiet-outline .n-tree {
     font-size: var(--nav-item-size);
 }
@@ -6,8 +10,24 @@
     flex: 0 0 13px !important;
 }
 .quiet-outline .n-tree-node-wrapper {
-    padding: 0px;
+    padding: 1.5px;
+    border: 1px solid transparent ;
 }
+
+.quiet-outline .n-tree-node-wrapper:hover {
+    --color-cyan-500: hsl(192, 46%, 68%);
+    --color-gray-90: hsl(225, 12%, 20%); /* Content BG */
+    --color-cyan-500: hsl(192, 46%, 68%);
+    color: var(--color-cyan-500);
+    background: var(--color-gray-90);
+    /* background: red !important; */
+    border: 1px solid var(--color-cyan-500) !important ;
+  }
+
+  .quiet-outline .n-tree-node-wrapper .n-tree-node {
+    /* border: 1px solid red !important; */
+  }
+
 .quiet-outline .n-tree-node.n-tree-node--selectable {
     align-items: center;
 }
@@ -109,8 +129,8 @@ color: var(--text-normal);
 }
 
 .n-tree-node.located {
-    font-weight: 700;
-    color: #d60505;
+    font-weight: 500;
+    color: #d60505 !important;
 }
 .n-tree-node.located code {
     font-weight: 1000 !important;
