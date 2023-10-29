@@ -1,13 +1,13 @@
-This is my personal Obsidian Git workflow template
+# This is my personal Obsidian Git workflow template
 
 ---
 
-# Note if use
+## Note if use
 
-## When to use Quick switcher / Omnisearch plugin / core obsidian Search
+### When use Omnisearch plugin / core obsidian Quick switcher or Search
 
--   Quick switcher only show note title
+- Quick switcher only show note title
 
--   Omnisearch can search for content BUT only the **first result** show up
+- Omnisearch can search for content BUT only the **first result** show up
 
--   Core Obsidian Search don't miss any content
+- Core Obsidian Search don't miss any content
