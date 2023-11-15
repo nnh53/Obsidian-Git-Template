@@ -14,6 +14,8 @@ README: https://github.com/nickmilo/LYT-Mode
 License: MIT License
 Icons: Boxicons
 
+----- IMPLEMENTED QUIET-OUTLINE-PLUGIN BY hoangnn (and maybe somewhere other)---
+
 ────────────────────────────────────
 
 TABLE OF CONTENTS
@@ -137,7 +139,8 @@ Icons
 
   --shadow-small: 0px 3px 12px -2px rgba(14, 11, 11, 0.5);
   --shadow-medium: 0px 3px 3.1px -20px rgba(0, 0, 0, 0.2), 0px 24px 25px -20px rgba(0, 0, 0, 0.35);
-  --shadow-large: 0px 2px 2.3px -52px rgba(0, 0, 0, 0.448), 0px 5.6px 6.3px -52px rgba(0, 0, 0, 0.6), 0px 13.6px 15.1px -52px rgba(0, 0, 0, 0.852), 0px 45px 50px -52px rgba(0, 0, 0, 1);
+  --shadow-large: 0px 2px 2.3px -52px rgba(0, 0, 0, 0.448), 0px 5.6px 6.3px -52px rgba(0, 0, 0, 0.6),
+    0px 13.6px 15.1px -52px rgba(0, 0, 0, 0.852), 0px 45px 50px -52px rgba(0, 0, 0, 1);
 
   --color-cyan-300: hsl(183, 29%, 62%);
   --color-cyan-500: hsl(192, 46%, 68%);
@@ -150,8 +153,28 @@ Icons
   --color-cyan-577: hsl(13, 52%, 80%); /* An Alt for Italic Text */
   --color-cyan-700: hsl(194, 50%, 47%);
   --color-cyan-900: hsl(196, 27%, 41%);
-  --color-cyan-gradient-1: linear-gradient(180deg, #82b7ba, #77aeb3, #6da5ac, #629ca5, #5a919c, #558590, #4f7984, #496d79); /* 300 -> 900 */
-  --color-cyan-gradient-2: linear-gradient(180deg, #6de0fd, #5dd6f5, #56d3f2, #4fcfef, #48cceb, #40c8e8, #37c5e5, #2dc1e2);
+  --color-cyan-gradient-1: linear-gradient(
+    180deg,
+    #82b7ba,
+    #77aeb3,
+    #6da5ac,
+    #629ca5,
+    #5a919c,
+    #558590,
+    #4f7984,
+    #496d79
+  ); /* 300 -> 900 */
+  --color-cyan-gradient-2: linear-gradient(
+    180deg,
+    #6de0fd,
+    #5dd6f5,
+    #56d3f2,
+    #4fcfef,
+    #48cceb,
+    #40c8e8,
+    #37c5e5,
+    #2dc1e2
+  );
 
   --color-magenta-300: hsl(334, 37%, 65%);
   --color-magenta-310: hsl(338, 100%, 87%);
@@ -161,8 +184,28 @@ Icons
   --color-magenta-900: hsl(317, 62%, 65%);
   --color-magenta-910: hsl(342, 96%, 68%);
   --color-magenta-920: hsl(342, 31%, 34%);
-  --color-magenta-gradient-1: linear-gradient(180deg, #ffb1ce, #ffa3ca, #f897c4, #f88cc4, #ef7dbe, #ea77be, #e472be, #dd6ebe); /* 300 -> 900 */
-  --color-magenta-gradient-2: linear-gradient(180deg, #ff99be, #fc91bd, #f88abd, #f483bd, #ef7dbe, #ea77be, #e472be, #dd6ebe); /* 500 -> 900 */
+  --color-magenta-gradient-1: linear-gradient(
+    180deg,
+    #ffb1ce,
+    #ffa3ca,
+    #f897c4,
+    #f88cc4,
+    #ef7dbe,
+    #ea77be,
+    #e472be,
+    #dd6ebe
+  ); /* 300 -> 900 */
+  --color-magenta-gradient-2: linear-gradient(
+    180deg,
+    #ff99be,
+    #fc91bd,
+    #f88abd,
+    #f483bd,
+    #ef7dbe,
+    #ea77be,
+    #e472be,
+    #dd6ebe
+  ); /* 500 -> 900 */
 
   --color-orange-300: hsl(28, 93%, 66%);
   --color-orange-310: hsl(28, 63%, 66%);
@@ -179,8 +222,28 @@ Icons
   --color-yellow-510: hsl(59, 51%, 68%);
   --color-yellow-700: hsl(58, 86%, 66%);
   --color-yellow-900: hsl(59, 81%, 47%);
-  --color-yellow-gradient-1: linear-gradient(180deg, #fcff80, #fafd6b, #f9fb57, #f6f843, #f4f430, #f0ef1e, #e4e213, #ccc914); /* 300 -> 900 */
-  --color-yellow-gradient-2: linear-gradient(-90deg, #f3ee5e, #f1ec50, #f0eb41, #eee933, #ece725, #eae516, #dbd815, #ccc914); /* 700 -> 900 */
+  --color-yellow-gradient-1: linear-gradient(
+    180deg,
+    #fcff80,
+    #fafd6b,
+    #f9fb57,
+    #f6f843,
+    #f4f430,
+    #f0ef1e,
+    #e4e213,
+    #ccc914
+  ); /* 300 -> 900 */
+  --color-yellow-gradient-2: linear-gradient(
+    -90deg,
+    #f3ee5e,
+    #f1ec50,
+    #f0eb41,
+    #eee933,
+    #ece725,
+    #eae516,
+    #dbd815,
+    #ccc914
+  ); /* 700 -> 900 */
 
   --color-h3-orange: hsl(38, 60%, 63%); /* Deletable */
   --color-h3-green: hsl(148, 47%, 51%); /* Deletable */
@@ -194,8 +257,28 @@ Icons
   --color-green-900: hsl(166, 74%, 45%);
   --color-green-910: hsl(158, 85%, 45%);
   --color-green-920: hsl(167, 83%, 31%);
-  --color-green-gradient-1: linear-gradient(180deg, #9effd0, #8bfcc9, #79f9c4, #67f4bf, #57efbb, #48e8b7, #39e0b4, #2cd8b0); /* 300 -> 900 */
-  --color-green-gradient-2: linear-gradient(180deg, #a2f49a, #89f18d, #79ee8b, #69ea8d, #59e692, #4ae299, #3bdda3, #2cd8b0); /* 500 -> 900 */
+  --color-green-gradient-1: linear-gradient(
+    180deg,
+    #9effd0,
+    #8bfcc9,
+    #79f9c4,
+    #67f4bf,
+    #57efbb,
+    #48e8b7,
+    #39e0b4,
+    #2cd8b0
+  ); /* 300 -> 900 */
+  --color-green-gradient-2: linear-gradient(
+    180deg,
+    #a2f49a,
+    #89f18d,
+    #79ee8b,
+    #69ea8d,
+    #59e692,
+    #4ae299,
+    #3bdda3,
+    #2cd8b0
+  ); /* 500 -> 900 */
 
   --color-purple-300: hsl(255, 49%, 76%);
   --color-purple-333: hsl(245, 37%, 80%); /* H4 test splitting purple-500 and h5 --color-slate-500 */
@@ -206,15 +289,55 @@ Icons
   --color-purple-900: hsl(263, 46%, 61%);
   --color-purple-910: hsl(263, 37%, 69%);
   --color-purple-920: hsl(263, 39%, 46%);
-  --color-purple-gradient-1: linear-gradient(180deg, #d9ccff, #d2c4ff, #cbbcff, #c4b4ff, #bdabff, #b5a3ff, #ad9bff, #a593ff); /* 500 -> 700 */
-  --color-purple-gradient-2: linear-gradient(180deg, #d9ccff, #ccbafc, #c0a9f8, #b59af2, #ab8cea, #a281e1, #9977d6, #916ec9); /* 500 -> 900 */
+  --color-purple-gradient-1: linear-gradient(
+    180deg,
+    #d9ccff,
+    #d2c4ff,
+    #cbbcff,
+    #c4b4ff,
+    #bdabff,
+    #b5a3ff,
+    #ad9bff,
+    #a593ff
+  ); /* 500 -> 700 */
+  --color-purple-gradient-2: linear-gradient(
+    180deg,
+    #d9ccff,
+    #ccbafc,
+    #c0a9f8,
+    #b59af2,
+    #ab8cea,
+    #a281e1,
+    #9977d6,
+    #916ec9
+  ); /* 500 -> 900 */
 
   --color-slate-300: hsl(220, 23%, 90%);
   --color-slate-500: hsl(224, 37%, 80%);
   --color-slate-700: hsl(223, 18%, 68%);
   --color-slate-900: hsl(225, 14%, 40%);
-  --color-slate-gradient-1: linear-gradient(180deg, #eff1f5, #e3e6ed, #d7dce5, #ccd1dd, #c0c7d5, #b5bccd, #aab2c5, #9fa7bc); /* 300 -> 700 */
-  --color-slate-gradient-2: linear-gradient(180deg, #b9c3df, #aab4cf, #9ca5bf, #8e97b0, #8c96b1, #828ba5, #70778f, #656d85); /* 500 -> 900 */
+  --color-slate-gradient-1: linear-gradient(
+    180deg,
+    #eff1f5,
+    #e3e6ed,
+    #d7dce5,
+    #ccd1dd,
+    #c0c7d5,
+    #b5bccd,
+    #aab2c5,
+    #9fa7bc
+  ); /* 300 -> 700 */
+  --color-slate-gradient-2: linear-gradient(
+    180deg,
+    #b9c3df,
+    #aab4cf,
+    #9ca5bf,
+    #8e97b0,
+    #8c96b1,
+    #828ba5,
+    #70778f,
+    #656d85
+  ); /* 500 -> 900 */
 
   --color-highlight-text: var(--color-cyan-530);
   --color-highlight-bg: rgba(255, 252, 59, 0.08);
@@ -327,7 +450,8 @@ body.theme-dark {
   --embed-font-style: inherit;
 
   /* Blocks */
-  --embed-block-shadow-hover: 0 0 0 1px var(--background-modifier-border), inset 0 0 0 1px var(--background-modifier-border);
+  --embed-block-shadow-hover: 0 0 0 1px var(--background-modifier-border),
+    inset 0 0 0 1px var(--background-modifier-border);
 
   /* File layout */
   --file-line-width: 700px;
@@ -904,9 +1028,21 @@ body.theme-dark {
   border-top: 2px solid var(--color-yellow-300);
 }
 
-.theme-dark .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active.mod-active .workspace-tab-header-inner-close-button,
-.theme-dark .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active.mod-active .workspace-tab-header-inner-icon svg,
-.theme-dark .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active.mod-active .workspace-tab-header-inner-title {
+.theme-dark
+  .mod-root
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header.is-active.mod-active
+  .workspace-tab-header-inner-close-button,
+.theme-dark
+  .mod-root
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header.is-active.mod-active
+  .workspace-tab-header-inner-icon
+  svg,
+.theme-dark
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header.is-active.mod-active
+  .workspace-tab-header-inner-title {
   color: var(--color-yellow-300);
 }
 
@@ -922,8 +1058,17 @@ body.theme-dark {
   border-left: 2px solid var(--color-yellow-300);
 }
 
-.theme-dark .mod-root .workspace-tabs.mod-stacked .workspace-tab-header.is-active.mod-active .workspace-tab-header-inner-close-button,
-.theme-dark .mod-root .workspace-tabs.mod-stacked .workspace-tab-header.is-active.mod-active .workspace-tab-header-inner-icon svg,
+.theme-dark
+  .mod-root
+  .workspace-tabs.mod-stacked
+  .workspace-tab-header.is-active.mod-active
+  .workspace-tab-header-inner-close-button,
+.theme-dark
+  .mod-root
+  .workspace-tabs.mod-stacked
+  .workspace-tab-header.is-active.mod-active
+  .workspace-tab-header-inner-icon
+  svg,
 .theme-dark .workspace-tabs.mod-stacked .workspace-tab-header.is-active.mod-active .workspace-tab-header-inner-title {
   color: var(--color-yellow-300);
 }
@@ -968,7 +1113,7 @@ body.theme-dark {
 }
 
 .nav-files-container.node-insert-event {
-  padding: 0 0 var(--size-4-2) 0;
+  padding: 0 2px var(--size-4-2) 2px;
 }
 
 .item-list {
@@ -986,7 +1131,8 @@ body.theme-dark {
 
 .tree-item .tree-item-self {
   border: 1px solid transparent; /* my fix ?????*/
-  padding: var(--size-2-1) var(--size-4-2) var(--size-2-1) calc(4px + var(--size-4-2));
+  /* padding: var(--size-2-1) var(--size-4-2) var(--size-2-1) calc(4px + var(--size-4-2)); */
+  padding: var(--size-2-2) var(--size-4-2) var(--size-2-2) calc(4px + var(--size-4-2));
 }
 
 /*~ Tree Items for Tabs Colors ~*/
@@ -1033,7 +1179,7 @@ body.theme-dark {
 .tree-item-inner {
   font-size: var(--font-big); /* my fix */
   margin: 0px 0px 0px 0px;
-  padding: 0px 0px 0px 8px; /* STEP 2: This one is crucial ✨ */
+  padding: 2.5px 0px 0px 8px; /* STEP 2: This one is crucial ✨ */
 } /* This POV is of the lined text itself */
 
 .tree-item-icon.collapse-icon {
@@ -1082,10 +1228,10 @@ body.theme-dark {
 
 .nav-folder-title,
 .nav-file-title {
-  border: 0.9px solid transparent; /* hid this, which causes tighter spacing and an animated effect while hovering over, which mimics that same effect with the tag and outline panes. */
+  border: 1px solid transparent; /* hid this, which causes tighter spacing and an animated effect while hovering over, which mimics that same effect with the tag and outline panes. */
   border-radius: 2px;
   line-height: 1;
-  padding: var(--size-2-1) var(--size-4-2);
+  /* padding: var(--size-2-1) var(--size-4-2); */
   /* font-size: var(--font-smallish); hid this because .tree-item-inner seems to be the main one */
 }
 
@@ -1395,15 +1541,94 @@ input[type="checkbox"]:checked:after {
 
 /*────────── Checkbox List Text ──────────*/
 /* Normal Text */
-.markdown-source-view.mod-cm6 .HyperMD-task-line:is([data-task="!"], [data-task="/"], [data-task="?"], [data-task="n"], [data-task="*"], [data-task="l"], [data-task="i"], [data-task="<"], [data-task="S"], [data-task='"'], [data-task="I"], [data-task="p"], [data-task="c"], [data-task="b"]),
-ul > li.task-list-item.is-checked[data-task]:is([data-task="!"], [data-task="/"], [data-task="?"], [data-task="n"], [data-task="*"], [data-task="l"], [data-task="i"], [data-task="<"], [data-task="S"], [data-task='"'], [data-task="I"], [data-task="p"], [data-task="c"], [data-task="b"], [data-task="f"], [data-task="w"], [data-task="k"], [data-task="u"], [data-task="d"]) {
+.markdown-source-view.mod-cm6
+  .HyperMD-task-line:is(
+    [data-task="!"],
+    [data-task="/"],
+    [data-task="?"],
+    [data-task="n"],
+    [data-task="*"],
+    [data-task="l"],
+    [data-task="i"],
+    [data-task="<"],
+    [data-task="S"],
+    [data-task='"'],
+    [data-task="I"],
+    [data-task="p"],
+    [data-task="c"],
+    [data-task="b"]
+  ),
+ul
+  > li.task-list-item.is-checked[data-task]:is(
+    [data-task="!"],
+    [data-task="/"],
+    [data-task="?"],
+    [data-task="n"],
+    [data-task="*"],
+    [data-task="l"],
+    [data-task="i"],
+    [data-task="<"],
+    [data-task="S"],
+    [data-task='"'],
+    [data-task="I"],
+    [data-task="p"],
+    [data-task="c"],
+    [data-task="b"],
+    [data-task="f"],
+    [data-task="w"],
+    [data-task="k"],
+    [data-task="u"],
+    [data-task="d"]
+  ) {
   color: var(--md-color-text);
   text-decoration: none;
 }
 
 /* Remove Check Mark */
-input[type="checkbox"][data-task]:is([data-task="!"], [data-task="/"], [data-task="?"], [data-task="n"], [data-task="*"], [data-task="l"], [data-task="i"], [data-task="<"], [data-task="S"], [data-task='"'], [data-task="I"], [data-task="p"], [data-task="c"], [data-task="b"], [data-task="f"], [data-task="w"], [data-task="k"], [data-task="u"], [data-task="d"]):checked:after,
-.markdown-preview-view li:is([data-task="!"], [data-task="/"], [data-task="?"], [data-task="n"], [data-task="*"], [data-task="l"], [data-task="i"], [data-task="<"], [data-task="S"], [data-task='"'], [data-task="I"], [data-task="p"], [data-task="c"], [data-task="b"], [data-task="f"], [data-task="w"], [data-task="k"], [data-task="u"], [data-task="d"]) input[type="checkbox"].task-list-item-checkbox:checked:after {
+input[type="checkbox"][data-task]:is(
+    [data-task="!"],
+    [data-task="/"],
+    [data-task="?"],
+    [data-task="n"],
+    [data-task="*"],
+    [data-task="l"],
+    [data-task="i"],
+    [data-task="<"],
+    [data-task="S"],
+    [data-task='"'],
+    [data-task="I"],
+    [data-task="p"],
+    [data-task="c"],
+    [data-task="b"],
+    [data-task="f"],
+    [data-task="w"],
+    [data-task="k"],
+    [data-task="u"],
+    [data-task="d"]
+  ):checked:after,
+.markdown-preview-view
+  li:is(
+    [data-task="!"],
+    [data-task="/"],
+    [data-task="?"],
+    [data-task="n"],
+    [data-task="*"],
+    [data-task="l"],
+    [data-task="i"],
+    [data-task="<"],
+    [data-task="S"],
+    [data-task='"'],
+    [data-task="I"],
+    [data-task="p"],
+    [data-task="c"],
+    [data-task="b"],
+    [data-task="f"],
+    [data-task="w"],
+    [data-task="k"],
+    [data-task="u"],
+    [data-task="d"]
+  )
+  input[type="checkbox"].task-list-item-checkbox:checked:after {
   display: none;
 }
 
@@ -3670,7 +3895,9 @@ body .excalidraw.theme--dark kbd {
 
 /*~ Icon Replacements for Excalidraw ~*/
 /* Quote Glyph Icon (Convert to Markdown RAW) */
-body:not(.no-custom-icons) .view-action[aria-label="Change to RAW mode (only effects text-elements with links or transclusions)"] svg.quote-glyph {
+body:not(.no-custom-icons)
+  .view-action[aria-label="Change to RAW mode (only effects text-elements with links or transclusions)"]
+  svg.quote-glyph {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' style='fill: rgba(0, 0, 0, 1);transform: ;msFilter:;'%3E%3Cpath d='M20.553 18.15H3.447a1.443 1.443 0 0 1-1.442-1.441V7.291c0-.795.647-1.441 1.442-1.441h17.105c.795 0 1.442.646 1.442 1.441v9.418a1.441 1.441 0 0 1-1.441 1.441zM6.811 15.268V11.52l1.922 2.402 1.922-2.402v3.748h1.922V8.732h-1.922l-1.922 2.403-1.922-2.403H4.889v6.535h1.922zM19.688 12h-1.922V8.732h-1.923V12h-1.922l2.884 3.364L19.688 12z'%3E%3C/path%3E%3C/svg%3E");
 }
 
@@ -3787,15 +4014,72 @@ body.hider-frameless .workspace-split.mod-left-split > .workspace-tabs {
   cursor: text;
 }
 
-/* .n-tree-node-wrapper .located {
-  background-color: red !important;
-  padding-left: 50px !important;
+.quiet-outline .n-tree-node-wrapper {
+  /* margin: 1.5px; */
+  border: 1px solid transparent;
 }
 
-.workspace-tab-container .workspace-leaf-content {
-  background-color: red;
-} */
+.quiet-outline .n-tree-node-wrapper .n-tree-node-content__text p {
+  --color-gray-40: hsl(224, 17%, 68%); /* Metadata Text */
+  color: var(--color-gray-40); /* my fix chỉnh màu font all text*/
+  margin: 0;
+  font-weight: normal;
+}
 
+/* chữ đổi màu hover */
+.quiet-outline .n-tree-node-wrapper:hover .n-tree-node-content__text p {
+  color: var(--color-cyan-530); /* my fix chỉnh màu font all text*/
+  font-weight: normal;
+}
+
+/* tạo border màu hover */
+.quiet-outline .n-tree-node-wrapper:hover {
+  border: 1px solid var(--color-cyan-500);
+  border-radius: 2px;
+}
+
+.quiet-outline .n-tree.ellipsis .n-tree-node-content__text {
+  width: 100%;
+  /* chỗ để fix font size */
+  font-size: 16px;
+}
+
+.quiet-outline .n-tree-node-wrapper .n-tree-node p {
+  border-bottom: 2px solid transparent;
+}
+
+.quiet-outline .n-tree-node-wrapper .n-tree-node.located p {
+  font-weight: normal !important;
+  color: var(--color-highlight-text);
+  background: var(--color-highlight-bg);
+  border-bottom: 2px solid var(--color-highlight-border);
+  border-radius: 2px;
+}
+
+/* fix cái củ lòn pending */
+.quiet-outline .n-tree-node-wrapper .n-tree-node.n-tree-node:not(.n-tree-node--disabled).n-tree-node--pending {
+  background-color: transparent;
+}
+
+.quiet-outline .n-tree-node-wrapper .n-tree-node.n-tree-node:not(.n-tree-node--disabled).n-tree-node--pending:active {
+  background-color: transparent;
+}
+
+.quiet-outline .n-tree-node-wrapper .n-tree-node.n-tree-node--pending p {
+  color: var(--color-highlight-text);
+  background: var(--color-highlight-bg);
+  border-bottom: 2px solid var(--color-highlight-border);
+  border-radius: 2px;
+  font-weight: normal;
+}
+
+.quiet-outline .n-tree-node-wrapper .n-tree-node.n-tree-node--selected p {
+  color: var(--color-highlight-text);
+  background: var(--color-highlight-bg);
+  border-bottom: 2px solid var(--color-highlight-border);
+  border-radius: 2px;
+  font-weight: normal;
+}
 /*────────────────────────────────────
                 Dataview
 ────────────────────────────────────*/
@@ -3886,7 +4170,11 @@ body.hider-frameless .workspace-split.mod-left-split > .workspace-tabs {
   margin-top: 0;
 }
 
-.markdown-source-view.mod-cm6 .cm-embed-block .block-language-dataview .dataview.result-group input.task-list-item-checkbox {
+.markdown-source-view.mod-cm6
+  .cm-embed-block
+  .block-language-dataview
+  .dataview.result-group
+  input.task-list-item-checkbox {
   margin-right: var(--size-2-3);
 }
 
@@ -4561,7 +4849,11 @@ body:not(.no-custom-icons) svg.document {
 }
 
 /* Document, File Explorer New Note */
-body:not(.no-custom-icons) .workspace-leaf-content[data-type="file-explorer"] .nav-header .nav-action-button svg.document {
+body:not(.no-custom-icons)
+  .workspace-leaf-content[data-type="file-explorer"]
+  .nav-header
+  .nav-action-button
+  svg.document {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' style='fill: rgba(0, 0, 0, 1);transform: ;msFilter:;'%3E%3Cpath d='M19.937 8.68c-.011-.032-.02-.063-.033-.094a.997.997 0 0 0-.196-.293l-6-6a.997.997 0 0 0-.293-.196c-.03-.014-.062-.022-.094-.033a.991.991 0 0 0-.259-.051C13.04 2.011 13.021 2 13 2H6c-1.103 0-2 .897-2 2v16c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2V9c0-.021-.011-.04-.013-.062a.99.99 0 0 0-.05-.258zM16.586 8H14V5.414L16.586 8zM6 20V4h6v5a1 1 0 0 0 1 1h5l.002 10H6z'%3E%3C/path%3E%3C/svg%3E");
 }
 
@@ -4649,7 +4941,10 @@ body:not(.no-custom-icons) svg.folder {
 }
 
 /* Folder, Workspace Tab Header -> File Explorer */
-body:not(.no-custom-icons) .workspace-tab-header[aria-label="File explorer"] .workspace-tab-header-inner-icon svg.folder {
+body:not(.no-custom-icons)
+  .workspace-tab-header[aria-label="File explorer"]
+  .workspace-tab-header-inner-icon
+  svg.folder {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' style='fill: rgba(0, 0, 0, 1);transform: ;msFilter:;'%3E%3Cpath d='M3 13h1v7c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-7h1a1 1 0 0 0 .707-1.707l-9-9a.999.999 0 0 0-1.414 0l-9 9A1 1 0 0 0 3 13zm7 7v-5h4v5h-4zm2-15.586 6 6V15l.001 5H16v-5c0-1.103-.897-2-2-2h-4c-1.103 0-2 .897-2 2v5H6v-9.586l6-6z'%3E%3C/path%3E%3C/svg%3E");
 }
 
