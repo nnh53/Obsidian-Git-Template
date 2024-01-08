@@ -87,20 +87,20 @@
 .n-tree .n-tree-node-switcher {
   height: 0px;
 }
-.quiet-outline [class*="level-"]:not(.level-1) .n-tree-node-content {
+.quiet-outline [class*=level-]:not(.level-1) .n-tree-node-content {
   font-size: 1em;
 }
 .n-tree-node.located {
-  font-weight: bold;
+  font-weight: bold !important;
 }
 .n-tree-node.located code {
-  font-weight: 1000;
+  font-weight: 1000 !important;
 }
 .n-tree-node.located mjx-math {
-  font-weight: bold;
+  font-weight: bold !important;
 }
 .n-tree.n-tree--block-line .n-tree-node:not(.n-tree-node--disabled).n-tree-node--selected {
-  background-color: transparent;
+  background-color: transparent !important;
 }
 .quiet-outline {
   height: 100%;

@@ -1,4 +1,5 @@
 /*
+MODIFIED: 2023-12-19
 LYT MODE
 Obsidian Theme
 by Nick Milo (evolved from Cybertron)
@@ -13,8 +14,6 @@ I do both my creative and my analytical work in LYT Mode.
 README: https://github.com/nickmilo/LYT-Mode
 License: MIT License
 Icons: Boxicons
-
------ IMPLEMENTED QUIET-OUTLINE-PLUGIN BY hoangnn (and maybe somewhere other)---
 
 ────────────────────────────────────
 
@@ -345,6 +344,8 @@ Icons
 }
 
 body.theme-dark {
+  --window-border: 1px solid var(--window-border-color); /* Thanks Damian K from the Prism theme! */
+  --window-border-color: var(--color-gray-70);
   /*───────── Obsidian - provided Variables ──────────*/
   --font-sans: "DM Sans", "Inter", -apple-system BlinkMacSystemFont, "Segoe UI", "Ubuntu", Helvetica, Arial, sans-serif;
   --font-mono: "DM Mono", "Fira Code", Courier, monospace;
@@ -652,7 +653,7 @@ body.theme-dark {
   --nav-item-color-highlighted: var(--text-accent-hover);
 
   --nav-item-weight: inherit;
-  /* --nav-item-weight-hover: inherit; chỉnh */
+  /* --nav-item-weight-hover: inherit; my fix */
   --nav-item-weight-active: inherit;
   --nav-item-white-space: nowrap;
 
@@ -1113,7 +1114,7 @@ body.theme-dark {
 }
 
 .nav-files-container.node-insert-event {
-  padding: 0 2px var(--size-4-2) 2px;
+  padding: 0 0 var(--size-4-2) 0;
 }
 
 .item-list {
@@ -1177,8 +1178,8 @@ body.theme-dark {
 /* The Padding Values go clockwise: top, right, bottom, left */
 
 .tree-item-inner {
-  font-size: var(--font-big); /* my fix */
-  margin: 0px 0px 0px 0px;
+  font-size: var(--font-big);
+  margin: 0px 0px 0px 0px; /* my fix the line be low (0px 0px 0px 8px)*/
   padding: 2.5px 0px 0px 8px; /* STEP 2: This one is crucial ✨ */
 } /* This POV is of the lined text itself */
 
@@ -1197,7 +1198,7 @@ body.theme-dark {
 /*─────────Vault Title──────────*/
 
 .nav-folder-title[data-path="/"] {
-  font-size: var(--font-small);
+  /* font-size: var(--font-small); */
   font-family: var(--font-monospace-theme);
   top: 0;
   width: 100%;
@@ -1228,11 +1229,16 @@ body.theme-dark {
 
 .nav-folder-title,
 .nav-file-title {
-  border: 1px solid transparent; /* hid this, which causes tighter spacing and an animated effect while hovering over, which mimics that same effect with the tag and outline panes. */
+  /* old is 1px */
+  border: 0.9px solid transparent; /* hid this, which causes tighter spacing and an animated effect while hovering over, which mimics that same effect with the tag and outline panes. */
   border-radius: 2px;
   line-height: 1;
-  /* padding: var(--size-2-1) var(--size-4-2); */
+  padding: var(--size-2-1) var(--size-4-2); /* my old fix is commented */
   /* font-size: var(--font-smallish); hid this because .tree-item-inner seems to be the main one */
+}
+
+.nav-file-title-content {
+  padding-bottom: 2.5px;
 }
 
 .theme-dark .nav-folder-title:hover,
@@ -1280,7 +1286,7 @@ Content / Active Note / Opened Notes
 /* Header Colors */
 
 :root {
-  /* --header-shadow-size: 0px 4px 3px; */
+  /* --header-shadow-size: 0px 4px 3px; my fix turn off shadow*/
   /* --header-shadow-color: rgb(31, 31, 31); */
 }
 
@@ -2269,7 +2275,7 @@ span.frontmatter-section-label {
 ────────────────────────────────────*/
 
 /* Colors for Outgoing */
-/* my fix down */
+/* my fix down - i don't update - old */
 .outgoing-link-pane .tree-item-self.is-clickable {
   border: 1px transparent !important;
 }
@@ -2282,6 +2288,15 @@ span.frontmatter-section-label {
   color: var(--color-cyan-500) !important;
 }
 /* my fix up */
+
+/* the update new */
+/* .outgoing-link-pane > .tree-item-self:not(.is-collapsed) {
+  color: var(--color-gray-10);
+}
+
+.outgoing-link-pane > .tree-item-self:not(.is-collapsed):hover {
+  color: var(--color-cyan-500);
+} */
 
 .outgoing-link-pane > .tree-item-self:not(.is-collapsed):active {
   color: var(--color-gray-50);
@@ -3310,6 +3325,7 @@ select,
 /* my fix drop down */
 .search-results-info .dropdown {
   text-align-last: left;
+  padding-right: 23px;
 }
 
 .setting-item-control .dropdown {
@@ -3956,6 +3972,13 @@ body.hider-frameless .workspace-split.mod-left-split > .workspace-tabs {
 /*────────────────────────────────────
                 Quiet-Outline my fix
 ────────────────────────────────────*/
+.quiet-outline *::before,
+.quiet-outline *::after,
+.quiet-outline * {
+  animation: none !important;
+  transition: none !important;
+}
+
 .workspace-leaf-content[data-type="quiet-outline"] .view-content {
   padding: 0px;
 }
@@ -4017,6 +4040,11 @@ body.hider-frameless .workspace-split.mod-left-split > .workspace-tabs {
 .quiet-outline .n-tree-node-wrapper {
   /* margin: 1.5px; */
   border: 1px solid transparent;
+  margin-right: 2px;
+}
+
+.quiet-outline .n-tree-node-wrapper .n-tree-node-content {
+  padding-right: 0px;
 }
 
 .quiet-outline .n-tree-node-wrapper .n-tree-node-content__text p {
@@ -4038,10 +4066,31 @@ body.hider-frameless .workspace-split.mod-left-split > .workspace-tabs {
   border-radius: 2px;
 }
 
+/* lúc bấm vào */
+.quiet-outline .n-tree-node-wrapper:active {
+  animation: none !important;
+  transition: none !important;
+  color: var(--color-gray-70) !important;
+  background: var(--color-blacker) !important;
+  border: 1px solid var(--color-gray-70) !important;
+}
+
+.quiet-outline .n-tree-node:active {
+  animation: none !important;
+  transition: none !important;
+  background: var(--color-blacker) !important;
+}
+.quiet-outline .n-tree-node:active p {
+  animation: none !important;
+  transition: none !important;
+  color: var(--color-gray-70) !important;
+}
+
 .quiet-outline .n-tree.ellipsis .n-tree-node-content__text {
   width: 100%;
+  padding-top: 4px;
   /* chỗ để fix font size */
-  font-size: 16px;
+  font-size: 17px;
 }
 
 .quiet-outline .n-tree-node-wrapper .n-tree-node p {
@@ -5474,4 +5523,170 @@ body:not(.no-custom-icons) svg.wrench-screwdriver-glyph {
 /* Yesterday Glyph, Calendar with Minus */
 body:not(.no-custom-icons) svg.yesterday-glyph {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' style='fill: rgba(0, 0, 0, 1);transform: ;msFilter:;'%3E%3Cpath d='M8 13h8v2H8z'%3E%3C/path%3E%3Cpath d='M19 4h-2V2h-2v2H9V2H7v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm.002 16H5V8h14l.002 12z'%3E%3C/path%3E%3C/svg%3E");
+}
+/* CALLOUTS, TRYING TO FIX USING PRISM'S SETTINGS WITH A SLOPPY COPY AND PASTE */
+
+/* 
+
+body:not(.pt-disable-callout-styling) {
+    --callout-padding: 4px;
+    --callout-radius: var(--radius-m);
+    --callout-background-alpha: 20%;
+  } 
+  
+
+
+  body:not(.pt-disable-callout-styling) .callout {
+    background-color: unset;
+  }
+
+  */
+
+/* THIS IS THE ONE THAT FIXES CALLOUTS WITH HEADERS, THANKS DAMIAN OF THE PRISM THEME! */
+
+body:not(.pt-disable-callout-styling) .callout .callout-title {
+  position: relative;
+  z-index: 5;
+  gap: unset;
+  align-items: center;
+  min-height: 36px;
+  border: 2px solid;
+  border-radius: var(--radius-m);
+}
+
+body:not(.pt-disable-callout-styling) .callout .callout-title:empty + .callout-content {
+  padding: var(--size-4-1) var(--size-4-3);
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-radius: var(--radius-m);
+}
+body:not(.pt-disable-callout-styling) .callout .callout-title-inner {
+  padding: var(--size-4-1) 0;
+  margin: 0 var(--size-4-1);
+}
+body:not(.pt-disable-callout-styling) .callout .callout-icon {
+  align-self: unset;
+  margin: 0 var(--size-4-1) 0 var(--size-4-2);
+  border-radius: var(--radius-m);
+}
+body:not(.pt-disable-callout-styling) .callout .callout-fold {
+  display: flex;
+  align-self: unset;
+  margin-top: unset;
+  margin-left: auto;
+}
+
+body:not(.pt-disable-callout-styling) .callout .callout-content {
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  border-left: 1px solid;
+  border-bottom-right-radius: var(--radius-m);
+  border-bottom-left-radius: var(--radius-m);
+}
+
+/* PROPERTIES: SLOPPY COPY AND PASTE OF DAMIAN K.'S PRISM THEME */
+
+.metadata-properties-heading {
+  display: inline-flex;
+  width: 100%;
+  padding: var(--size-4-2);
+  margin-bottom: unset;
+  background-color: var(--color-gray-95);
+  border: var(--window-border);
+}
+.metadata-properties-heading .collapse-indicator {
+  position: relative;
+  left: unset;
+  order: 2;
+  opacity: 1;
+}
+.metadata-properties-heading .collapse-indicator .collapse-icon svg.svg-icon {
+  width: 18px;
+}
+
+.metadata-properties-title {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: unset;
+  font-weight: var(--bold-weight);
+}
+.metadata-properties-title::before {
+  align-items: center;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  margin-right: var(--size-4-2);
+  content: "";
+  background-color: var(--text-muted);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-archive'%3E%3Crect width='20' height='5' x='2' y='4' rx='2'/%3E%3Cpath d='M4 9v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9'/%3E%3Cpath d='M10 13h4'/%3E%3C/svg%3E");
+  -webkit-mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 18px;
+}
+
+.cm-editor .metadata-content,
+.markdown-preview-view .metadata-content {
+  padding: var(--size-4-3) var(--size-4-2);
+  border: var(--window-border);
+  border-top: unset;
+}
+
+.metadata-property-key {
+  align-items: center;
+}
+
+.textarea,
+input[type="text"],
+input[type="search"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input.document-search-input,
+input.document-replace-input,
+input.prompt-input {
+  font-size: var(--font-normal); /* THIS FIXES THE ANNOYINGLY BIGGER KEY FONT */
+}
+
+.metadata-property-icon {
+  height: fit-content;
+  padding: var(--size-2-1);
+  margin-left: var(--size-4-1);
+}
+.metadata-property-icon:hover {
+  background-color: var(--interactive-accent-base);
+  border-radius: var(--radius-s);
+}
+.metadata-property-icon::before {
+  display: none;
+}
+
+.metadata-container {
+  transform: unset;
+}
+.metadata-container .metadata-add-button {
+  margin-top: var(--size-4-2);
+  margin-left: var(--size-4-1);
+  border: var(--window-border);
+}
+
+.multi-select-container {
+  gap: var(--size-4-2);
+}
+
+.metadata-property:not([data-property-key="tags"]) .multi-select-pill {
+  line-height: unset;
+}
+
+.metadata-property[data-property-key="tags"] {
+  --pill-radius: var(--radius-s);
+}
+
+.workspace-leaf-content[data-type="all-properties"] .view-content,
+.workspace-leaf-content[data-type="file-properties"] .view-content,
+.workspace-leaf-content[data-type="properties"] .view-content {
+  padding: var(--size-4-1);
+}
+
+.metadata-property:focus-within {
+  box-shadow: 0 0 0 1px var(--window-border-color);
 }
