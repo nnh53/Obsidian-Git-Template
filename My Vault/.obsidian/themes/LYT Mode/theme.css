@@ -857,7 +857,7 @@ body.theme-dark {
   --text-on-accent: var(--color-white);
   --text-error: var(--color-magenta-910);
   --text-success: var(--color-green-920);
-  --text-selection: rgba(134, 169, 209, 0.15);
+  --text-selection: rgba(134, 169, 209, 0.11);
   --text-accent: var(--color-gray-20);
   --text-accent-hover: var(--color-white);
   --interactive-normal: var(--color-blacker);
@@ -4129,6 +4129,41 @@ body.hider-frameless .workspace-split.mod-left-split > .workspace-tabs {
   border-radius: 2px;
   font-weight: normal;
 }
+
+/*────────────────────────────────────
+                Omnisearch my fix
+────────────────────────────────────*/
+.omnisearch-default-highlight {
+  text-decoration-skip-ink: unset !important;
+  text-decoration: none !important;
+  color: var(--color-highlight-text);
+  background: var(--color-highlight-bg);
+  border-bottom: 2px solid var(--color-highlight-border);
+  border-radius: 2px;
+}
+
+/*────────────────────────────────────
+                Quick Switcher++ my fix
+────────────────────────────────────*/
+.qsp-content .suggestion-highlight {
+  color: var(--color-highlight-text);
+  background: var(--color-highlight-bg);
+  border-bottom: 2px solid var(--color-highlight-border);
+  border-radius: 2px;
+}
+
+/* highlight recently used file suggestions */
+.suggestion-item.qsp-recent-file .qsp-title {
+  /* text-decoration: underline dotted var(--text-muted); default*/
+  text-decoration: none !important;
+}
+
+/* highlight currently open editor suggestions */
+.suggestion-item.qsp-open-editor .qsp-title {
+  /* text-decoration: underline var(--text-accent); default  */
+  text-decoration: none !important;
+}
+
 /*────────────────────────────────────
                 Dataview
 ────────────────────────────────────*/
