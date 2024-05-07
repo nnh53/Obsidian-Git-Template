@@ -14,6 +14,8 @@
 
 - Để đổi giữa các tab dùng Ctrl PageUp/Down
 
+- Mình dung Hider plugin để tắt bớt những trên giao diện
+
 ### When use Omnisearch plugin / core obsidian Quick switcher or Search
 
 - Quick switcher only show note title
