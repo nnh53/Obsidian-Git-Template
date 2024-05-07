@@ -9,12 +9,6 @@
   ],
   "command-palette:open": [
     {
-      "modifiers": [
-        "Alt"
-      ],
-      "key": "C"
-    },
-    {
       "modifiers": [],
       "key": "F1"
     },
@@ -57,14 +51,7 @@
       "key": ","
     }
   ],
-  "switcher:open": [
-    {
-      "modifiers": [
-        "Alt"
-      ],
-      "key": "D"
-    }
-  ],
+  "switcher:open": [],
   "workspace:close": [
     {
       "modifiers": [
@@ -326,5 +313,29 @@
       "key": "F"
     }
   ],
-  "editor:toggle-comments": []
+  "editor:toggle-comments": [],
+  "darlal-switcher-plus:switcher-plus:open-commands": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "C"
+    }
+  ],
+  "darlal-switcher-plus:switcher-plus:open": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "D"
+    }
+  ],
+  "darlal-switcher-plus:switcher-plus:open-symbols": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "F"
+    }
+  ]
 }

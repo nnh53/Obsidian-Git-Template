@@ -11,8 +11,10 @@
   "headingsListCommand": "#",
   "bookmarksListCommand": "'",
   "commandListCommand": ">",
+  "vaultListCommand": "vault ",
   "relatedItemsListCommand": "~",
   "relatedItemsListActiveEditorCommand": "^ ",
+  "shouldSearchHeadings": true,
   "strictHeadingsOnly": false,
   "searchAllHeadings": true,
   "headingsSearchDebounceMilli": 250,
@@ -49,6 +51,7 @@
   "excludeObsidianIgnoredFiles": false,
   "shouldSearchFilenames": true,
   "shouldSearchBookmarks": false,
+  "shouldSearchRecentFiles": true,
   "pathDisplayFormat": 3,
   "hidePathIfRoot": true,
   "enabledRelatedItems": [
@@ -230,6 +233,55 @@
         "label": "searches",
         "isActive": false,
         "isAvailable": true
+      },
+      "pinnedCommands": {
+        "id": "pinnedCommands",
+        "mode": 64,
+        "label": "pinned",
+        "isActive": false,
+        "isAvailable": true
+      },
+      "recentCommands": {
+        "id": "recentCommands",
+        "mode": 64,
+        "label": "recent",
+        "isActive": false,
+        "isAvailable": true
+      },
+      "recentFilesSearch": {
+        "id": "recentFilesSearch",
+        "mode": 16,
+        "label": "recent files",
+        "isActive": false,
+        "isAvailable": true
+      },
+      "bookmarksSearch": {
+        "id": "bookmarksSearch",
+        "mode": 16,
+        "label": "bookmarks",
+        "isActive": false,
+        "isAvailable": false
+      },
+      "filenamesSearch": {
+        "id": "filenamesSearch",
+        "mode": 16,
+        "label": "filenames",
+        "isActive": false,
+        "isAvailable": true
+      },
+      "headingsSearch": {
+        "id": "headingsSearch",
+        "mode": 16,
+        "label": "headings",
+        "isActive": false,
+        "isAvailable": true
+      },
+      "externalFilesSearch": {
+        "id": "externalFilesSearch",
+        "mode": 16,
+        "label": "external files",
+        "isActive": false,
+        "isAvailable": false
       }
     },
     "shouldResetActiveFacets": false,
